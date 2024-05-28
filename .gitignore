@@ -1,15 +1,18 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+# compiled output
+dist/
+tmp/
+out-tsc/
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+# dependencies
+node_modules/
+jspm_packages/
+
+# Angular CLI
+.angular
+.angular/cache
+.angular.json
 
 # IDEs and editors
 .idea/
@@ -18,25 +21,72 @@ yarn-error.log
 .c9/
 *.launch
 .settings/
-*.sublime-workspace
+.vscode/
+.history/
 
-# Visual Studio Code
+# IDE - VS Code
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
+# IDE - WebStorm
+.idea/*
+
+# JetBrains
+*.iml
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Logs
+logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'ng build'
+/dist
+
+# Output of 'ng test', 'ng e2e'
 /coverage
-/libpeerconnection.log
-testem.log
-/typings
 
-# System files
+# System Files
 .DS_Store
 Thumbs.db
+
+# Environment files
+.env
+.env.*.local
+
+# Angular specific files
+.angular/
+.sass-cache/
+.connect/
+
+# Ignore IntelliJ IDEA specific files
+.idea/
+
+# End of list
